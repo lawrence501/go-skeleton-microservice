@@ -1,0 +1,12 @@
+spec:
+  serviceName: skeleton-service
+  host: skeleton-service
+  port: 8080
+  db:
+    host: db
+    port: 5432
+    dbName: skeletondb
+    user: skeleton
+    password: secret
+    maxConn: 25
+    maxIdleConn: 3

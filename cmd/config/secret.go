@@ -8,3 +8,10 @@ func (s SecretString) MarshalYAML() (interface{}, error) {
 	}
 	return "[REDACTED]", nil
 }
+
+func (s SecretString) MarshalJSON() ([]byte, error) {
+	if len(s) == 0 {
+		return []byte(`""`), nil
+	}
+	return []byte(`"[REDACTED]"`), nil
+}

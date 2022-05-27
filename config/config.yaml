@@ -10,3 +10,6 @@ spec:
     password: secret
     maxConn: 25
     maxIdleConn: 3
+  log:
+    level: DEBUG
+    stacktrace: false

@@ -1,0 +1,11 @@
+version: "3.4"
+services:
+  skeleton-service:
+    build:
+      context: .
+    ports:
+      8080:8080
+    # depends_on:
+    # volumes:
+    restart: on-failure
+    command: ["/app/skeleton-service", "-config=/app/config/local.yaml"]
